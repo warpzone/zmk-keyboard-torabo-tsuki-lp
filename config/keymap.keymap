@@ -40,11 +40,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans         &trans            &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)      &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp LEFT_BRACE  &kp MINUS      &kp EQUAL         &kp RIGHT_BRACE    &kp COLON      &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
+&none      &none           &none              &none            &none      &none                      &none              &none                 &none                  &none      &none            &none
+&kp TILDE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &none      &kp PLUS                   &kp LS(BACKSLASH)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp LS(PERCENT)  &trans
+&trans     &kp AT_SIGN     &kp SEMICOLON      &kp DOLLAR       &none      &none      &none   &none   &kp HASH           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &none            &trans
+&trans     &none           &kp ASTERISK       &kp COLON        &kp CARET  &kp GRAVE  &none   &none   &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none      &none            &trans
+&none      &none           &trans             &trans           &trans     &trans     &trans  &trans  &trans             &none                 &none                  &trans     &trans           &trans
             >;
         };
 
