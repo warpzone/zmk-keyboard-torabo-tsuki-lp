@@ -4,4 +4,14 @@
 
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
+    // When layer 3 is active: scroll mode
+    scroller {
+        layers = <3>;
+        input-processors = <
+            &zip_xy_transform INPUT_TRANSFORM_X_INVERT
+            &zip_xy_scaler 1 4
+            &zip_xy_to_scroll_mapper
+        >;
+    };
 };
