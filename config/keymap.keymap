@@ -39,11 +39,11 @@
 
         layer_2 {
             bindings = <
-&none      &none           &none              &none            &none      &none                      &none              &none                 &none                  &none      &none            &none
-&kp TILDE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &none      &kp PLUS                   &kp LS(BACKSLASH)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp LS(PERCENT)  &trans
-&trans     &kp AT_SIGN     &kp SEMICOLON      &kp DOLLAR       &none      &none      &none   &none   &kp HASH           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &none            &trans
-&trans     &none           &kp ASTERISK       &kp COLON        &kp CARET  &kp GRAVE  &none   &none   &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none      &none            &trans
-&none      &none           &trans             &trans           &trans     &trans     &trans  &trans  &trans             &none                 &none                  &trans     &trans           &trans
+&none      &none           &none              &none            &none      &none                      &none          &none                 &none                  &none      &none            &none
+&kp TILDE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &none      &kp PLUS                   &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp LS(PERCENT)  &trans
+&trans     &kp AT_SIGN     &kp SEMICOLON      &kp DOLLAR       &none      &none      &none   &none   &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &none            &trans
+&trans     &none           &kp ASTERISK       &kp COLON        &kp CARET  &kp GRAVE  &none   &none   &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none      &none            &trans
+&none      &none           &trans             &trans           &trans     &trans     &trans  &trans  &trans         &none                 &none                  &trans     &trans           &trans
             >;
         };
 
