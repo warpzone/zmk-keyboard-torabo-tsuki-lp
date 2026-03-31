@@ -12,3 +12,4 @@ outputs:
 siblings:
   - torabo_tsuki_lp_left
   - torabo_tsuki_lp_right
+  - torabo_tsuki_lp_dongle
