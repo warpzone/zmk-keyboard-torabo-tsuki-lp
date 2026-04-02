@@ -34,14 +34,23 @@
 };
 
 &physical_layout_s {
+    compatible = "zmk,physical-layout";
+    display-name = "S Layout";
+    transform = <&size_s_transform>;
     kscan = <&mock_kscan>;
 };
 
 &physical_layout_m {
+    compatible = "zmk,physical-layout";
+    display-name = "M Layout";
+    transform = <&size_m_transform>;
     kscan = <&mock_kscan>;
 };
 
 &physical_layout_l {
+    compatible = "zmk,physical-layout";
+    display-name = "L Layout";
+    transform = <&size_l_transform>;
     kscan = <&mock_kscan>;
 };
 
