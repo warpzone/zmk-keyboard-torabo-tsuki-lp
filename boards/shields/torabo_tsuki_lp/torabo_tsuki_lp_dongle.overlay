@@ -1,11 +1,12 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include "torabo_tsuki_lp.dtsi"
+#include "torabo_tsuki_lp_dongle_layouts.dtsi"
 #include <behaviors/input_gestures_accel.dtsi>
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout_l;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -33,14 +34,23 @@
 };
 
 &physical_layout_s {
+    compatible = "zmk,physical-layout";
+    display-name = "S Layout";
+    transform = <&size_s_transform>;
     kscan = <&mock_kscan>;
 };
 
 &physical_layout_m {
+    compatible = "zmk,physical-layout";
+    display-name = "M Layout";
+    transform = <&size_m_transform>;
     kscan = <&mock_kscan>;
 };
 
 &physical_layout_l {
+    compatible = "zmk,physical-layout";
+    display-name = "L Layout";
+    transform = <&size_l_transform>;
     kscan = <&mock_kscan>;
 };
 
