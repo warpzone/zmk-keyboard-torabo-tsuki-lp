@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
-    - name: oleksandrmaslov
-      url-base: https://github.com/oleksandrmaslov
+    - name: warpzone
+      url-base: https://github.com/warpzone
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,7 +30,7 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-pointing-acceleration
-      remote: oleksandrmaslov
+      remote: warpzone
       revision: main
   self:
     path: config
