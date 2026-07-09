@@ -4,3 +4,6 @@ config SHIELD_TORABO_TSUKI_LP_LEFT
 
 config SHIELD_TORABO_TSUKI_LP_RIGHT
     def_bool $(shields_list_contains,torabo_tsuki_lp_right)
+
+config SHIELD_TORABO_TSUKI_LP_DONGLE
+    def_bool $(shields_list_contains,torabo_tsuki_lp_dongle)

@@ -1,0 +1,25 @@
+/*
+ * Rate-limited variant of the upstream `input-split` snippet (reg 0).
+ *
+ * Instead of forwarding the raw pointing device straight to the split BLE
+ * link, it inserts a `torabo,input-throttle` proxy that aggregates motion and
+ * re-emits it non-blocking (K_NO_WAIT) at a fixed cadence. This keeps a
+ * high-report-rate sensor (the right trackball) from saturating the split
+ * forward path. See src/input_throttle.c.
+ */
+/ {
+    pointing_device_throttled: pointing_device_throttled {
+        compatible = "torabo,input-throttle";
+    };
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        pointing_device_split: pointing_device_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            device = <&pointing_device_throttled>;
+        };
+    };
+};

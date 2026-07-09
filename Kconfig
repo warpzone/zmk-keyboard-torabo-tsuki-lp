@@ -1,0 +1,3 @@
+config TORABO_INPUT_THROTTLE
+    bool "Torabo input throttle proxy"
+    depends on INPUT

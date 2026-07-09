@@ -1,0 +1,3 @@
+name: input-split-secondary
+append:
+  EXTRA_DTC_OVERLAY_FILE: input-split-secondary.overlay

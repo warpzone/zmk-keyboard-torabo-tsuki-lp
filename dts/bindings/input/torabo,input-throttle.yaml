@@ -1,0 +1,5 @@
+description: Torabo input throttle proxy
+
+compatible: "torabo,input-throttle"
+
+include: base.yaml

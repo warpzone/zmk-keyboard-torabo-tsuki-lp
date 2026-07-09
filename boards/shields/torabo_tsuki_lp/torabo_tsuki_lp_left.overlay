@@ -1,7 +1,8 @@
-#include "torabo_tsuki_lp.dtsi"
+#include "torabo_tsuki_lp_lr.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include "torabo_tsuki_lp_pointing.dtsi"
 
 &pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    TORABO_TRACKBALL_INPUT_PROCESSORS
 };

@@ -1,0 +1,4 @@
+name: input-split-throttled
+append:
+  EXTRA_DTC_OVERLAY_FILE: input-split-throttled.overlay
+  EXTRA_CONF_FILE: input-split-throttled.conf
