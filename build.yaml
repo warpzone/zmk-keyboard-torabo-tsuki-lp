@@ -16,7 +16,7 @@ include:
     snippet: "split-peripheral input-trackball input-split-throttled"
     artifact-name: torabo_tsuki_lp_dongle_ball_right_right_peripheral
   - board: seeeduino_xiao_ble
-    shield: torabo_tsuki_lp_dongle
+    shield: torabo_tsuki_lp_dongle rgbled_adapter
     snippet: "split-central"
     artifact-name: torabo_tsuki_lp_dongle_ball_right_dongle_central
   - board: bmp_boost

@@ -27,5 +27,11 @@ manifest:
     - name: zmk-feature-non-lipo-battery-management
       remote: sekigon-gonnoc
       revision: main
+    - name: zmk-rgbled-widget
+      url: https://github.com/caksoylar/zmk-rgbled-widget
+      revision: v0.3
+    - name: zmk-pointing-acceleration
+      url: https://github.com/warpzone/zmk-pointing-acceleration
+      revision: v0.3
   self:
     path: config

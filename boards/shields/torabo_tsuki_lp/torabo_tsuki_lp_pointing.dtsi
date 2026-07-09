@@ -1,20 +1,23 @@
 /*
  * Shared trackball input-processor chain.
  *
- * The same processing (pointer transform for cursor, and an XY->scroll
- * mapping on layer 3) is applied to the trackball wherever it is consumed:
+ * The same processing (pointer transform/acceleration for cursor, and an
+ * XY->scroll mapping on layer 3) is applied to the trackball wherever it is
+ * consumed:
  *   - right.overlay  : local &pointing_listener  (right-as-central builds)
  *   - left.overlay   : local &pointing_listener  (left-as-central builds)
  *   - dongle.overlay : split listener (reg 0)     (dongle builds)
  *
- * Defined once here as a macro so the chain only has to change in a single
- * place. The including file must have already pulled in
- * <input/processors.dtsi> and <dt-bindings/zmk/input_transform.h>.
+ * Defined once here as a macro so the curve/scaling only has to change in a
+ * single place. The including file must have already pulled in
+ * <input/processors.dtsi> and <dt-bindings/zmk/input_transform.h>, and must
+ * provide the &pointer_accel label (via torabo_tsuki_lp_common.dtsi).
  */
 
 #define TORABO_TRACKBALL_INPUT_PROCESSORS                                       \
     input-processors =                                                         \
-        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>; \
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>, \
+        <&pointer_accel>;                                                      \
                                                                                \
     scroller {                                                                 \
         layers = <3>;                                                          \
