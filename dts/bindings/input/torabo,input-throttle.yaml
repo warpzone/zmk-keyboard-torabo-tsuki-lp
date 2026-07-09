@@ -3,3 +3,14 @@ description: Torabo input throttle proxy
 compatible: "torabo,input-throttle"
 
 include: base.yaml
+
+properties:
+  source:
+    type: phandle
+    required: true
+    description: Source input device to aggregate and forward.
+
+  throttle-interval-ms:
+    type: int
+    default: 30
+    description: Relative event aggregation interval in milliseconds.

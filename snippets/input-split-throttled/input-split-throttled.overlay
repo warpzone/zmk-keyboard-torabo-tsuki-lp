@@ -10,6 +10,8 @@
 / {
     pointing_device_throttled: pointing_device_throttled {
         compatible = "torabo,input-throttle";
+        source = <&pointing_device>;
+        throttle-interval-ms = <30>;
     };
 
     split_inputs {
