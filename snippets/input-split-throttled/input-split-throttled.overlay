@@ -6,6 +6,12 @@
  * re-emits it non-blocking (K_NO_WAIT) at a fixed cadence. This keeps a
  * high-report-rate sensor (the right trackball) from saturating the split
  * forward path. See src/input_throttle.c.
+ *
+ * `source` is this board's local `pointing_device`. This snippet and
+ * `input-split-secondary-throttled` are applied to *different* peripheral
+ * builds (this one to the right trackball, the other to the left trackpad),
+ * so although both reference the `pointing_device` label there is never more
+ * than one throttle instance bound to a given device in a single binary.
  */
 / {
     pointing_device_throttled: pointing_device_throttled {
