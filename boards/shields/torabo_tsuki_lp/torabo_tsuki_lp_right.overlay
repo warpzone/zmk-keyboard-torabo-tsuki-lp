@@ -1,3 +1,5 @@
+#define TORABO_TSUKI_LP_RIGHT 1
+
 #include "torabo_tsuki_lp_lr.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
