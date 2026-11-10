@@ -2,12 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: warpzone
+      url-base: https://github.com/warpzone
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
+      remote: warpzone
+      revision: v0.3-usb-boot-no-sof
       import: app/west.yml
     - name: zmk-component-bmp-boost
       remote: sekigon-gonnoc
